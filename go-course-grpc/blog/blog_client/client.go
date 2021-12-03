@@ -27,9 +27,9 @@ func main() {
 	// create Blog
 	fmt.Println("Creating the blog")
 	blog := &blogpb.Blog{
-		AuthorId:	"Agung",
-		Title:		"Agung'S Blog",
-		Content:	"Content of the first blog",
+		AuthorId: "Agung",
+		Title:    "Agung'S Blog",
+		Content:  "Content of the first blog",
 	}
 	createBlogRes, err := c.CreateBlog(context.Background(), &blogpb.CreateBlogRequest{Blog: blog})
 	if err != nil {
@@ -56,10 +56,10 @@ func main() {
 
 	// update Blog
 	newBlog := &blogpb.Blog{
-		Id:			blogID,
-		AuthorId:	"Setia",
-		Title:		"My First Blog (edited)",
-		Content:	"Content of the first blog, with some awesome additions!",
+		Id:       blogID,
+		AuthorId: "Setia",
+		Title:    "My First Blog (edited)",
+		Content:  "Content of the first blog, with some awesome additions!",
 	}
 	updateRes, updateErr := c.UpdateBlog(context.Background(), &blogpb.UpdateBlogRequest{Blog: newBlog})
 	if updateErr != nil {

@@ -36,4 +36,9 @@ go run greet/greet_server/server.go
 go run greet/greet_client/client.go
 ```
 
+* Unary, Server Streaming, Client Streaming, BiDi Streaming
+* Error Handling, Deadlines, SSL Encryption
+* Greeting, Calculator Service
+* Blog API CRUD w/ MongoDB
+
 [gRPC [Golang] Master Class: Build Modern API & Microservices](https://www.udemy.com/share/101Zo03@hLg16RK2Dy4Bqev4WGrRQNN4e06juzLsi2hHw-T0girQ21D6EbTpVx43gDxdo9xZ/)
