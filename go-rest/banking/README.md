@@ -38,4 +38,9 @@ SERVER_ADDRESS=localhost SERVER_PORT=8000 DB_USER=root DB_PASSWD= DB_ADDR=localh
     }
 ```
 
+Run `./start.sh` to download the dependencies and run the the application
+
+* `resources/database.sql` if you don't want to use docker, please import it.
+* configuration the docker file as you wish. to start the docker container, run the `docker-compose up` inside the `resources/docker` folder.
+
 [REST based microservices API development in Golang](https://www.udemy.com/share/103O5K3@f7Pf9EPs_ILg-vPmCF-CuzvjI8WaFfH85UbN5BCNxZO7cIVE9Q9Cz-l1flcV1u0Q/)

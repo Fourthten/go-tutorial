@@ -2,8 +2,8 @@ package app
 
 import (
 	"encoding/json"
-	"go-rest/banking-lib/service"
 	"go-rest/banking/dto"
+	"go-rest/banking/service"
 	"net/http"
 
 	"github.com/gorilla/mux"

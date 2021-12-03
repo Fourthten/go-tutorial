@@ -19,4 +19,4 @@ https://github.com/ashishjuyal/banking-auth
 # GET http://localhost:8181/auth/verify?token={token}&routeName={routeNm}&customer_id={custId}&account_id={accId}
 ```
 
-Run ./start.sh to download the dependencies and run the the application
+Run `./start.sh` to download the dependencies and run the the application
