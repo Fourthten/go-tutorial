@@ -2,8 +2,8 @@ package domain
 
 import (
 	"database/sql"
-	"go-rest/banking/errs"
-	"go-rest/banking/logger"
+	"go-rest/banking-lib/errs"
+	"go-rest/banking-lib/logger"
 
 	"github.com/jmoiron/sqlx"
 

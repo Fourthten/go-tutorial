@@ -1,8 +1,8 @@
 package main
 
 import (
+	"go-rest/banking-lib/logger"
 	"go-rest/banking/app"
-	"go-rest/banking/logger"
 	// "log"
 )
 

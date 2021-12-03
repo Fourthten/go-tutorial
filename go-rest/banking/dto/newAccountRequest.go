@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"go-rest/banking/errs"
+	"go-rest/banking-lib/errs"
 	"strings"
 )
 

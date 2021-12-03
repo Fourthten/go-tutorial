@@ -1,8 +1,8 @@
 package domain
 
 import (
+	"go-rest/banking-lib/errs"
 	"go-rest/banking/dto"
-	"go-rest/banking/errs"
 )
 
 type Customer struct {

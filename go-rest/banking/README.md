@@ -1,8 +1,6 @@
 ## Source
 ```bash
 https://github.com/ashishjuyal/banking
-https://github.com/ashishjuyal/banking-auth
-https://github.com/ashishjuyal/banking-lib
 
 https://github.com/gorilla/mux
 go get -u github.com/gorilla/mux
@@ -16,6 +14,10 @@ go get -u go.uber.org/zap
 https://github.com/jmoiron/sqlx
 go get github.com/jmoiron/sqlx
 
+https://jwt.io
+https://github.com/dgrijalva/jwt-go
+https://github.com/golang-jwt/jwt
+
 SERVER_ADDRESS=localhost SERVER_PORT=8000 DB_USER=root DB_PASSWD= DB_ADDR=localhost DB_PORT=3306 DB_NAME=banking go run main.go
 ```
 
@@ -23,11 +25,16 @@ SERVER_ADDRESS=localhost SERVER_PORT=8000 DB_USER=root DB_PASSWD= DB_ADDR=localh
 ```python
 # Content-Type (application/xml, application/json)
 # GET http://localhost:8000/customers?status=active
-# GET http://localhost:8000/customers/2000
-# POST http://localhost:8000/customers/2000/account
+# GET http://localhost:8000/customers/{custId}
+# POST http://localhost:8000/customers/{custId}/account
     {
-        "account_type": "saving",
-        "amount": "5000.05"
+        "account_type": "saving", /* saving or checking */
+        "amount": 5000.05
+    }
+# POST http://localhost:8000/customers/{custId}/account/{accId}
+    {
+        "transaction_type": "deposit", /* deposit or withdrawal */
+        "amount": 10000
     }
 ```
 
