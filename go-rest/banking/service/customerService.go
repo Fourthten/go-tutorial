@@ -6,6 +6,7 @@ import (
 	"go-rest/banking/dto"
 )
 
+//go:generate mockgen -destination=../mocks/service/mockCustomerService.go -package=service go-rest/banking/service CustomerService
 type CustomerService interface {
 	// GetAllCustomer() ([]domain.Customer, error)
 	// GetCustomer(string) (*domain.Customer, *errs.AppError)
