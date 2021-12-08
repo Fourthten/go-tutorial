@@ -35,6 +35,8 @@ psql postgres -U postgres
 CREATE DATABASE tuts;
 GRANT ALL PRIVILEGES ON DATABASE tuts TO postgres;
 \list
+\c tuts
+\q
 ```
 
 ## Getting Started

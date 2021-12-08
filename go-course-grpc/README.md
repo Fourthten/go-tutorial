@@ -1,5 +1,4 @@
 ## Simple GRPC
-
 ```bash
 go mod init go-course-grpc (*parent folder)
 
