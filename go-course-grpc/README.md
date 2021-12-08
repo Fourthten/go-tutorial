@@ -36,6 +36,15 @@ go run greet/greet_server/server.go
 go run greet/greet_client/client.go
 ```
 
+## MongoDB
+```bash
+To run as a macOS service
+    brew services start mongodb-community@5.0
+To run manually as a background process
+    Intel : mongod --config /usr/local/etc/mongod.conf --fork
+    Apple M1 : mongod --config /opt/homebrew/etc/mongod.conf --fork
+```
+
 * Unary, Server Streaming, Client Streaming, BiDi Streaming
 * Error Handling, Deadlines, SSL Encryption
 * Greeting, Calculator Service

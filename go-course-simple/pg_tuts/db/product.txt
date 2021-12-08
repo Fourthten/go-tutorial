@@ -1,0 +1,10 @@
+Product
+    ID, Unique PK, Serial
+    Name, Unique,
+    Desc
+    Image
+    Price
+    Features
+    CreatedAt,
+    UpdatedAt,
+    IsActive,
