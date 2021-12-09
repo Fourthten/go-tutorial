@@ -5,6 +5,7 @@ go 1.17
 require github.com/go-pg/pg v8.0.7+incompatible
 
 require (
+	github.com/go-sql-driver/mysql v1.6.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/onsi/ginkgo v1.16.5 // indirect
 	github.com/onsi/gomega v1.17.0 // indirect
