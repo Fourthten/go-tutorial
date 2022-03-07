@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning html/template Actions</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                {{/* example how to use actions */}}
+                <td>{{"Name"}}</td>
+                <td>: {{.Name}}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                {{$gender := .Gender}}
+                <td style="text-transform: capitalize;">
+                    : {{$gender}}
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>: 
+                    {{range $index, $elem := .Hobbies}}
+                        {{$elem}}
+                    {{end}}
+                </td>
+            </tr>
+            <tr>
+                <td>Affiliation</td>
+                <td>: {{.Info.Affiliation}} ({{.Info.GetAffiliationDetailInfo}})</td>
+            </tr>
+            {{with .Info}}
+            <tr>
+                <td>Address</td>
+                <td>: {{.Address}}</td>
+            </tr>
+            {{end}}
+            {{if eq .Name "Setia Jung"}}
+            <tr>
+                <td colspan="2" style="font-weight: bold;">
+                    I'm the best!
+                </td>
+            </tr>
+            {{end}}
+        </table>
+        {{$pipeline := "any"}}
+        {{if eq $pipeline "some"}}
+        <p>some</p>
+        {{else if eq $pipeline "any"}}
+        <p>any</p>
+        {{else}}
+        <p>none</p>
+        {{end}}
+        {{$isTrue := true}}
+        {{if $isTrue}}
+        <p>true</p>
+        {{end}}
+        {{if eq $pipeline "any"}}
+        <p>true any</p>
+        {{end}}
+        {{$isTrue := false}}
+        {{if ne $pipeline "some"}}
+        <p>false some</p>
+        {{end}}
+    </body>
+</html>

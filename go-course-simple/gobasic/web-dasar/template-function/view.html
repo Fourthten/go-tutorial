@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Learning html/template Functions</title>
+    </head>
+    <body>
+        <p>
+            {{html "<h2>Hello</h2>"}}
+        </p>
+        {{if eq .Name "Clark Kent"}}
+        <p>I'm the Superman!</p>
+        {{else if ne .Name "Clark Kent"}}
+        <p>I'm neither Superman or Batman</p>
+        {{end}}
+        <p>
+            {{.SayHello "World" "You are our hero"}}
+        </p>
+        <p>
+            {{printf "%s because I'm %s" "You know why" "Superman"}}
+        </p>
+        <p>
+            Superman have many friends. {{len .Friends}} of them are:
+            {{index .Friends 0}}
+            {{index .Friends 1}}, and
+            {{index .Friends 2}}
+        </p>
+        {{$cond1 := true}}
+        {{$cond2 := false}}
+        {{if or $cond1 $cond2}}
+            <p>Be like Superman</p>
+        {{end}}
+    </body>
+</html>
