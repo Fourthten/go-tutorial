@@ -1,0 +1,71 @@
+package main
+
+import (
+	"io"
+	"io/ioutil"
+	"log"
+	"os"
+
+	"github.com/pkg/sftp"
+	"golang.org/x/crypto/ssh"
+)
+
+func PublicKeyFile(file string) ssh.AuthMethod {
+	buffer, err := ioutil.ReadFile(file)
+	if err != nil {
+		return nil
+	}
+
+	key, err := ssh.ParsePrivateKey(buffer)
+	if err != nil {
+		return nil
+	}
+
+	return ssh.PublicKeys(key)
+}
+
+func main() {
+	const SSH_ADDRESS = "0.0.0.0:22"
+	const SSH_USERNAME = "username"
+	// const SSH_KEY = "yourpath.pem"
+	const SSH_PASSWORD = "password"
+
+	sshConfig := &ssh.ClientConfig{
+		User:            SSH_USERNAME,
+		HostKeyCallback: ssh.InsecureIgnoreHostKey(),
+		Auth: []ssh.AuthMethod{
+			ssh.Password(SSH_PASSWORD),
+			// PublicKeyFile(SSH_KEY),
+		},
+	}
+
+	client, err := ssh.Dial("tcp", SSH_ADDRESS, sshConfig)
+	if client != nil {
+		defer client.Close()
+	}
+	if err != nil {
+		log.Fatal("Failed to dial. " + err.Error())
+	}
+
+	sftpClient, err := sftp.NewClient(client)
+	if err != nil {
+		log.Fatal("Failed create client sftp client. " + err.Error())
+	}
+
+	fDestination, err := sftpClient.Create("/yourtargetpath/test-file.txt")
+	if err != nil {
+		log.Fatal("Failed to create destination file. " + err.Error())
+	}
+
+	fSource, err := os.Open("/yoursourcepath/test-file.txt")
+	if err != nil {
+		log.Fatal("Failed to read source file. " + err.Error())
+	}
+
+	_, err = io.Copy(fDestination, fSource)
+	if err != nil {
+		log.Fatal("Failed copy sources file into destination file. " + err.Error())
+	}
+
+	log.Println("File copied.")
+}

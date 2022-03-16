@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+    <title>XML Test</title>
+    <url>https://id.wikipedia.org/wiki/Halaman_Utama</url>
+    <contents>
+        <article>
+            <category>Home</category>
+            <title>Home Page</title>
+            <url>/Halaman_Utama/</url>
+        </article>
+        <article>
+            <category>Virus</category>
+            <title>Virus dalam sejarah manusia</title>
+            <url>/Virus_dalam_sejarah_manusia/</url>
+        </article>
+        <article info="popular article">
+            <category>Pythagoras</category>
+            <title>Pythagoras</title>
+            <url>/Pythagoras/</url>
+        </article>
+    </contents>
+</website>
