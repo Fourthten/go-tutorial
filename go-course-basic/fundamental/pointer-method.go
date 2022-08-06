@@ -11,8 +11,8 @@ func (man *Man) Married() {
 }
 
 func main() {
-	eko := Man{"Ajung"}
-	eko.Married()
+	ajung := Man{"Ajung"}
+	ajung.Married()
 
-	fmt.Println(eko.Name)
+	fmt.Println(ajung.Name)
 }

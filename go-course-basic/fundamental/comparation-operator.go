@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	var name1 = "Eko"
-	var name2 = "Budi"
+	var name1 = "Ajung"
+	var name2 = "Setia"
 
 	var result bool = name1 == name2
 	fmt.Println(result)

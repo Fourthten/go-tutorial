@@ -36,4 +36,8 @@
 `https://docs.google.com/presentation/d/1d7NZMrQwDvwRYZzqVgQKOAPuw_f7HEcIQdI6Rfvd2G4/edit#slide=id.p`
 `https://github.com/ProgrammerZamanNow/belajar-golang-embed`
 
+### golang Web
+`https://docs.google.com/presentation/d/1h_8nk-Ani4SykMq5lhgubzdtAtZfzPce7FHUuAKlwmE/edit#slide=id.p`
+`https://github.com/ProgrammerZamanNow/belajar-golang-web`
+
 `go env -w  GO111MODULE=off`

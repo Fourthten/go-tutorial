@@ -7,7 +7,7 @@ import (
 
 func main() {
 	helper.SayHello("Ajung")
-	// helper.sayGoodbye("Eko") // error
+	// helper.sayGoodbye("Ajung") // error
 	fmt.Println(helper.Application)
 	// fmt.Println(helper.version) // error
 }

@@ -27,10 +27,10 @@ func (animal Animal) GetName() string {
 }
 
 func main() {
-	var eko Person
-	eko.Name = "Ajung"
+	var ajung Person
+	ajung.Name = "Ajung"
 
-	SayHello(eko)
+	SayHello(ajung)
 
 	cat := Animal{
 		Name: "Push",
