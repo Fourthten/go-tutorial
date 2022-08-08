@@ -36,8 +36,23 @@
 `https://docs.google.com/presentation/d/1d7NZMrQwDvwRYZzqVgQKOAPuw_f7HEcIQdI6Rfvd2G4/edit#slide=id.p`
 `https://github.com/ProgrammerZamanNow/belajar-golang-embed`
 
-### golang Web
+### Golang Web
+
 `https://docs.google.com/presentation/d/1h_8nk-Ani4SykMq5lhgubzdtAtZfzPce7FHUuAKlwmE/edit#slide=id.p`
 `https://github.com/ProgrammerZamanNow/belajar-golang-web`
+
+### Golang HttpRouter
+
+`https://docs.google.com/presentation/d/1RaRkNSeaXopQXODvOANJiNyQ8ECg8QYJE8RvVrrjedg/edit#slide=id.p`
+`https://github.com/ProgrammerZamanNow/belajar-golang-httprouter`
+
+### Golang JSON
+
+`https://docs.google.com/presentation/d/1mGVdO7Khmiw-9lDmkCWqd9l5_UqohKRkpHbjabRD--U/edit#slide=id.p`
+`https://github.com/ProgrammerZamanNow/belajar-golang-json`
+
+### Golang RESTful API
+`https://docs.google.com/presentation/d/1CWDLPYNslBY44Krtzbt-YMntxqocNgMgvrObt5p2uxM/edit#slide=id.p`
+`https://github.com/ProgrammerZamanNow/belajar-golang-restful-api`
 
 `go env -w  GO111MODULE=off`
