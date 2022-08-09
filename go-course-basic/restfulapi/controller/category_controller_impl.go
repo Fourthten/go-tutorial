@@ -14,6 +14,10 @@ type CategoryControllerImpl struct {
 	CategoryService service.CategoryService
 }
 
+/**
+//Dependecy
+func NewCategoryController(categoryService service.CategoryService) *CategoryControllerImpl {
+*/
 func NewCategoryController(categoryService service.CategoryService) CategoryController {
 	return &CategoryControllerImpl{
 		CategoryService: categoryService,

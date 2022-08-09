@@ -56,4 +56,13 @@
 `https://docs.google.com/presentation/d/1CWDLPYNslBY44Krtzbt-YMntxqocNgMgvrObt5p2uxM/edit#slide=id.p`
 `https://github.com/ProgrammerZamanNow/belajar-golang-restful-api`
 
+### Golang Dependency
+
+`https://docs.google.com/presentation/d/1B6CC23M-XFkGRZwdHLYmkOULM0l1cSCpx02yeXkPb4U/edit#slide=id.p`
+`https://github.com/ProgrammerZamanNow/belajar-golang-dependency-injection`
+
+### Golang Logging
+`https://docs.google.com/presentation/d/1edVvzU_sOExvlN4lzYWOxF38v5GAJHdbbYUqsderNO0/edit`
+`https://github.com/ProgrammerZamanNow/belajar-golang-logging`
+
 `go env -w  GO111MODULE=off`
