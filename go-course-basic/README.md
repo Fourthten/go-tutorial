@@ -62,7 +62,13 @@
 `https://github.com/ProgrammerZamanNow/belajar-golang-dependency-injection`
 
 ### Golang Logging
-`https://docs.google.com/presentation/d/1edVvzU_sOExvlN4lzYWOxF38v5GAJHdbbYUqsderNO0/edit`
+
+`https://docs.google.com/presentation/d/1edVvzU_sOExvlN4lzYWOxF38v5GAJHdbbYUqsderNO0/edit#slide=id.p`
 `https://github.com/ProgrammerZamanNow/belajar-golang-logging`
+
+### Golang Generics
+
+`https://docs.google.com/presentation/d/1SrZVMmxeMPf3wjR0UKl5p_92tTeqdfePWPuJ0QZy-lA/edit#slide=id.p`
+`https://github.com/ProgrammerZamanNow/belajar-golang-generics`
 
 `go env -w  GO111MODULE=off`
